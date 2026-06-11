@@ -13,6 +13,10 @@ document.querySelector("#img").addEventListener('mousedown',function(event){
         console.log(degats);
         life.textContent =score;
         document.getElementById('vie').style.width = `${vie}px`;
+        if(score<=0)
+        {
+            nouv();
+        }
         if(score<=(scoreM/2))
         {
             document.getElementById('vie').style.backgroundColor = 'orange';
@@ -43,6 +47,7 @@ function degat()
     }
 }
 
+function nouv(){
 fetch('https://pokeapi.co/api/v2/pokemon/'+getrandom(151))
 .then(reponse => reponse.json())
 .then(resultat => {
@@ -50,4 +55,5 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+getrandom(151))
 });
 function ecran(pok){
     document.getElementById('img').src = pok.sprites.other.dream_world.front_default;
+}
 }
