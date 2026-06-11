@@ -1,13 +1,43 @@
 #vie{
     height: 17px;
-    width: 200px;
+    width: 400px;
     background-color: green;
-    /* border-radius: 15px; */
+    border-radius: 15px;
+    transition: width 0.1s ease;
 }
 #box{
+    position: relative;
     height: 17px;
-    width: 200px;
+    width: 400px;
     padding: 3px;
-    /* border-radius: 15px; */
+    border-radius: 15px;
     background-color: black;
+}
+#cool{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+body{
+    margin: 10% 0%;
+}
+#score {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Supprime les marges par défaut des paragraphes */
+    
+    /* Ces 3 lignes magiques centrent parfaitement le texte au milieu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white; /* Pour qu'il soit lisible sur le vert/noir */
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
