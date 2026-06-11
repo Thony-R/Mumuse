@@ -9,14 +9,18 @@ document.querySelector("#img").addEventListener('mousedown',function(event){
     {
         let degats =degat();
         score-=degats;
+        if(score<=0)
+        {
+            nouv();
+            score = 2700;
+            document.getElementById('vie').style.width = `${vie}px`;
+            document.getElementById('vie').style.backgroundColor = 'green';
+        }
         vie =((score*400)/scoreM);
         console.log(degats);
         life.textContent =score;
         document.getElementById('vie').style.width = `${vie}px`;
-        if(score<=0)
-        {
-            nouv();
-        }
+
         if(score<=(scoreM/2))
         {
             document.getElementById('vie').style.backgroundColor = 'orange';
