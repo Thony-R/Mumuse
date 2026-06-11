@@ -57,4 +57,4 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+getrandom(151))
 function ecran(pok){
     document.getElementById('img').src = pok.sprites.other.dream_world.front_default;
 }
-
+nouv();
