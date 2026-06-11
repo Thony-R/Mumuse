@@ -53,7 +53,8 @@ fetch('https://pokeapi.co/api/v2/pokemon/'+getrandom(151))
 .then(resultat => {
     ecran(resultat)
 });
+}
 function ecran(pok){
     document.getElementById('img').src = pok.sprites.other.dream_world.front_default;
 }
-}
+
