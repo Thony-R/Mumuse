@@ -1,0 +1,13 @@
+#vie{
+    height: 17px;
+    width: 200px;
+    background-color: green;
+    /* border-radius: 15px; */
+}
+#box{
+    height: 17px;
+    width: 200px;
+    padding: 3px;
+    /* border-radius: 15px; */
+    background-color: black;
+}
