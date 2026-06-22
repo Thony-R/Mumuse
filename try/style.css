@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form{
+    display: flex;
+    width: 50%;
+}
+#test{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#send{
+    align-self: flex-end;
+}
+/* Applique un contour rouge à TOUS les éléments */
+/* * {
+    outline: 1px solid red;
+}    */
